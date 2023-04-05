@@ -4,20 +4,21 @@
  */
 package Code;
 
-import java.security.KeyFactory;
-import java.security.NoSuchAlgorithmException;
+import java.security.KeyFactory; //lớp này cung cấp một giao diện cho các thuật toán tạo và chuyển đổi khóa.
+import java.security.NoSuchAlgorithmException; 
 import java.security.PrivateKey;
 import java.security.PublicKey;
 import java.security.spec.PKCS8EncodedKeySpec;
-import java.security.spec.X509EncodedKeySpec;
-import java.util.Base64;
+import java.security.spec.X509EncodedKeySpec; // Lớp này đại diện cho một bản mã hóa của khóa công khai X.509.
+import java.util.Base64; //lớp này cung cấp các phương thức để mã hóa và giải mã dữ liệu văn bản theo chuẩn Base64.
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import javax.crypto.Cipher;
-import javax.crypto.KeyGenerator;
-import javax.crypto.NoSuchPaddingException;
-import javax.crypto.SecretKey;
-import javax.crypto.spec.SecretKeySpec;
+import javax.crypto.Cipher; // lớp này cung cấp các phương thức để thực hiện mã hóa và giải mã dữ liệu.
+import javax.crypto.KeyGenerator; //lớp này cung cấp phương thức để tạo ra khóa đối xứng ngẫu nhiên sử dụng cho thuật toán RC4.
+import javax.crypto.NoSuchPaddingException; //Là một ngoại lệ (exception) trong Java được ném ra khi một giải thuật mã hóa yêu cầu một loại lớp padding không tồn tại. 
+                                             //Padding là quá trình thêm dữ liệu vào phía cuối của một khối dữ liệu trước khi mã hóa nó. 
+import javax.crypto.SecretKey; // lớp này đại diện cho một khóa đối xứng trong hệ thống mật mã.
+import javax.crypto.spec.SecretKeySpec; //lớp này đại diện cho một khóa đối xứng được cung cấp bởi một mảng byte.
 
 /**
  *
